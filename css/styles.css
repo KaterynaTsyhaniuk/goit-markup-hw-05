@@ -722,22 +722,24 @@ input {
   outline: transparent;
 }
 
-.checkbox {
-  font-weight: 400;
+.review-form-chackbox-wrapper {
+  margin-bottom: 23px;
+}
+
+.review-form-chackbox-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-.checkbox-link {
+.review-form-chackbox-label-link {
   line-height: 1.33;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
 }
 
-.review-checkbox {
-  margin-bottom: 8px;
+.review-form-own-chackbox {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -747,23 +749,21 @@ input {
   height: 16px;
   cursor: pointer;
   fill: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 8px;
 }
-.form-checkbox:checked + .checkbox-label .review-checkbox {
+
+.review-form-privacy-chackbox:checked
+  + .review-form-chackbox-label
+  .review-form-own-chackbox {
   background-color: #404bbf;
-  fill: #f4f4fd;
-  border: none;
-}
-.form-checkbox:focus + .checkbox-label .review-checkbox {
-  outline: 2px solid #404bbf;
+  fill: #ffffff;
 }
 
-.review-form-checkbox-wrapper {
-  margin-bottom: 24px;
+.review-form-privacy-chackbox:focus
+  + .review-form-chackbox-label
+  .review-form-own-chackbox {
+  outline: 2px solid rgba(0, 0, 225, 0.1);
 }
-
 .submit-btn {
   display: block;
   margin: 0 auto;
